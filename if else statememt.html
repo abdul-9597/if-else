@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+   
+</head><center>
+<body>
+        
+
+        <h2>Questions:</h2>
+
+   <label for="raining">Is it raining outside?</label>
+    <input type="text" id="raining" placeholder="Enter yes or no">
+
+    <br>
+
+    <label for="homework">Did you finish your homework?</label>
+    <input type="text" id="homework" placeholder="Enter yes or no">
+
+    <br>
+
+    <label for="cookies">Are there any cookies left?</label>
+    <input type="text" id="cookies" placeholder="Enter yes or no">
+
+    <br>
+
+    <label for="teeth">Did you brush your teeth?</label>
+    <input type="text" id="teeth" placeholder="Enter yes or no">
+
+    <br>
+
+    <label for="birthday">Is it your birthday today?</label>
+    <input type="text" id="birthday" placeholder="Enter yes or no">
+
+    <br>
+
+    <button onclick="checkAnswers()">Check Answers</button>
+    <script>
+        function checkAnswers() {
+            var raining = document.getElementById("raining").value.toLowerCase();
+            var homework = document.getElementById("homework").value.toLowerCase();
+            var cookies = document.getElementById("cookies").value.toLowerCase();
+            var teeth = document.getElementById("teeth").value.toLowerCase();
+            var birthday = document.getElementById("birthday").value.toLowerCase();
+
+            if (raining === "yes") {
+                alert("It is raining outside.");
+            } else {
+                alert("It is not raining outside.");
+            }
+
+            if (homework === "yes") {
+                alert("You finished your homework.");
+            } else {
+                alert("You did not finish your homework.");
+            }
+
+            if (cookies === "yes") {
+                alert("There are cookies left.");
+            } else {
+                alert("There are no cookies left.");
+            }
+
+            if (teeth === "yes") {
+                alert("You brushed your teeth.");
+            } else {
+                alert("You did not brush your teeth.");
+            }
+
+            if (birthday === "yes") {
+                alert("It is your birthday today. Happy Birthday!");
+            } else {
+                alert("It is not your birthday today.");
+            }
+        }
+    </script>
+
+
+</body>
+
+</center>
+
+</html>
